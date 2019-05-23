@@ -2,7 +2,7 @@
   <kbase name="KBase" default="true" eventProcessingMode="stream" equalsBehavior="identity">
     <ksession name="default-session" type="stateless" default="true" clockType="realtime">
       <workItemHandlers>
-        <workItemHandler type="WebService" name="org.jbpm.process.workitem.bpmn2.ServiceTask"/>
+        <workItemHandler type="ServiceTask" name="org.jbpm.process.workitem.bpmn2.ServiceTask"/>
       </workItemHandlers>
     </ksession>
   </kbase>
