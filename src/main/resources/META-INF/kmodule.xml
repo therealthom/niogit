@@ -1,1 +1,9 @@
-<kmodule xmlns="http://www.drools.org/xsd/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<kmodule xmlns="http://www.drools.org/xsd/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <kbase name="default-session" default="true" eventProcessingMode="stream" equalsBehavior="identity" includes="kie-base">
+    <ksession name="kie-session" type="stateless" default="true" clockType="realtime">
+      <workItemHandlers>
+        <workItemHandler type="Service Task" name="org.jbpm.process.workitem.bpmn2.ServiceTaskHandler"/>
+      </workItemHandlers>
+    </ksession>
+  </kbase>
+</kmodule>
