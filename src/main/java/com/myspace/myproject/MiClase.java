@@ -6,12 +6,23 @@ package com.myspace.myproject;
 
 public class MiClase implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public MiClase() {
-    }
+	private java.lang.String nombre;
 
+	public MiClase() {
+	}
 
+	public java.lang.String getNombre() {
+		return this.nombre;
+	}
 
+	public void setNombre(java.lang.String nombre) {
+		this.nombre = nombre;
+	}
+
+	public MiClase(java.lang.String nombre) {
+		this.nombre = nombre;
+	}
 
 }
